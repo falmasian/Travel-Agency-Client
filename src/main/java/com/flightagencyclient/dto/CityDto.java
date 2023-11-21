@@ -1,13 +1,13 @@
 package com.flightagencyclient.dto;
 
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
 public class CityDto {
     /**
      * نام شهر
      */
     String cityName;
-
-    public CityDto() {
-    }
 
     public CityDto(String cityName) {
         this.cityName = cityName;

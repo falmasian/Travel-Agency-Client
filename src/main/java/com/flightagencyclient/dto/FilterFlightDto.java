@@ -1,5 +1,8 @@
 package com.flightagencyclient.dto;
 
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
 public class FilterFlightDto {
 
     /**
@@ -14,9 +17,6 @@ public class FilterFlightDto {
      * تاریخ پرواز
      */
     private java.sql.Date flyDate;
-
-    public FilterFlightDto() {
-    }
 
     public FilterFlightDto(int originId, int destinationId, java.sql.Date flyDate) {
         this.originId = originId;

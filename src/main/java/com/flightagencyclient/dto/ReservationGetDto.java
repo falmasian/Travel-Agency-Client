@@ -1,5 +1,8 @@
 package com.flightagencyclient.dto;
 
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
 public class ReservationGetDto {
     /**
      * ایدی مشتری
@@ -17,9 +20,6 @@ public class ReservationGetDto {
      * کد ملی مسافر
      */
     private String nationalCode;
-
-    public ReservationGetDto() {
-    }
 
     public ReservationGetDto(String customerId, int flightId, String trackingCode, String nationalCode) {
         this.customerId = customerId;

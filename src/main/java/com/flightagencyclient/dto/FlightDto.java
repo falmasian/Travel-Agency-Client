@@ -1,7 +1,10 @@
 package com.flightagencyclient.dto;
 
+import lombok.NoArgsConstructor;
+
 import java.sql.Timestamp;
 
+@NoArgsConstructor
 public class FlightDto {
     /**
      * شماره پرواز
@@ -39,9 +42,6 @@ public class FlightDto {
      * صندلی های فروش نرفته
      */
     private int remainingSeats;
-
-    public FlightDto() {
-    }
 
     public FlightDto(int flightNumber, int originId, String originName, int destinationId, String destinationName, Timestamp flyDateTime, float cost, int capacity, int remainingSeats) {
         this.flightNumber = flightNumber;

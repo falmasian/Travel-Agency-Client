@@ -1,7 +1,10 @@
 package com.flightagencyclient.dto;
 
+import lombok.NoArgsConstructor;
+
 import java.util.ArrayList;
 
+@NoArgsConstructor
 public class CancellationDto {
 
     /**
@@ -18,9 +21,6 @@ public class CancellationDto {
      * کد ملی های کنسلی مسافران
      */
     private ArrayList<String> nationalCodes;
-
-    public CancellationDto() {
-    }
 
     public CancellationDto(String customerId,int flightId, ArrayList<String> nationalCodes) {
         this.customerId = customerId;
