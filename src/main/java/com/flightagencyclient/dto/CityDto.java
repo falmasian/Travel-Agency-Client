@@ -4,6 +4,7 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 public class CityDto {
+
     /**
      * نام شهر
      */
@@ -12,7 +13,6 @@ public class CityDto {
     public CityDto(String cityName) {
         this.cityName = cityName;
     }
-
 
     public String getCityName() {
         return cityName;

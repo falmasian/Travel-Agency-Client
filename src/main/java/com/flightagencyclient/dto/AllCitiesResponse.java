@@ -7,6 +7,9 @@ import java.util.List;
 @NoArgsConstructor
 public class AllCitiesResponse {
 
+    /**
+     * لیست شهر ها
+     */
     private List<CityDto> cityDtoList;
 
     public AllCitiesResponse(List<CityDto> cityDtoList) {

@@ -4,6 +4,7 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 public class PaymentDto {
+
     /**
      * کد پیگیری
      */

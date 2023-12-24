@@ -5,6 +5,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class PaymentResponseDto {
 
+    /**
+     * هزینه رزرو
+     */
     private float cost;
 
     public PaymentResponseDto(float cost) {

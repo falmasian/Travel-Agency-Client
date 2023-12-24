@@ -5,6 +5,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class ReservationResponseDto {
 
+    /**
+     * کد پیگیری
+     */
     private String tracingCode;
 
     public ReservationResponseDto(String tracingCode) {

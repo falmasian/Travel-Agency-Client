@@ -7,6 +7,9 @@ import java.util.List;
 @NoArgsConstructor
 public class CustomerReservationsResponseDto {
 
+    /**
+     * لیست رزرو ها
+     */
     private List<ReservationGetDto> reservationGetDtoList;
 
     public CustomerReservationsResponseDto(List<ReservationGetDto> reservationGetDtoList) {

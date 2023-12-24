@@ -52,7 +52,6 @@ public class BookingDto {
         this.nationalCodes = nationalCodes;
     }
 
-
     @Override
     public String toString() {
         return "BookingDto{" + '\n' +

@@ -4,12 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import java.io.IOException;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.time.Duration;
 import java.util.Scanner;
 
 @Component
@@ -33,7 +27,7 @@ public class Client {
                 5. see all flights
                 6. filter Flights""";
         try {
-            LOGGER.info(menu);
+           System.out.println(menu);
             return scanner.nextInt();
         } catch (Exception ex) {
             LOGGER.error("Error in the server ");
@@ -46,7 +40,7 @@ public class Client {
             case 1 -> bookingClient.reserve();
             case 2 -> bookingClient.cancel();
             case 3 -> bookingClient.pay();
-            case 4 -> bookingClient.getAndPrintAllClientReservations();
+            case 4 -> bookingClient.getAndPrintAllClientReservationsByCustomerId();
             case 5 -> bookingClient.getAndPrintFlights();
             case 6 -> bookingClient.filterAndPrintFlights();
             default -> showMenu();

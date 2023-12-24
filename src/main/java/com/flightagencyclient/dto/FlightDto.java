@@ -6,38 +6,47 @@ import java.sql.Timestamp;
 
 @NoArgsConstructor
 public class FlightDto {
+
     /**
      * شماره پرواز
      */
     private int flightNumber;
+
     /**
      * ایدی شهر مبدا
      */
     private int originId;
+
     /**
      * نام شهر مبدا
      */
     private String originName;
+
     /**
      * ایدی شهر مقصد
      */
     private int destinationId;
+
     /**
      * نام شهر مقصد
      */
     private String destinationName;
+
     /**
      * تاریخ و ساعت پرواز
      */
     private Timestamp flyDateTime;
+
     /**
      * هزیه بلیط
      */
     private float cost;
+
     /**
      * ظرفیت ئرواز
      */
     private int capacity;
+
     /**
      * صندلی های فروش نرفته
      */
